@@ -18,28 +18,11 @@ $opel["speed"]="110";
 $opel["doors"]="3";
 $opel["year"]="1999";
 
-$newmas = array($bmw,$toyota,$opel);
-
-echo "CAR BMW<br>";
-
-echo $newmas[0]['model'] . ' ' . $newmas[0]['speed'] . ' ' . $newmas[0]['doors'] . ' ' . $newmas[0]['year'];
-
-echo "<br>CAR TOYOTA<br>";
-echo $newmas[1]['model'] . ' ' . $newmas[1]['speed'] . ' ' . $newmas[1]['doors'] . ' ' . $newmas[1]['year'];
-
-echo "<br>CAR OPEL<br>";
-echo $newmas[2]['model'] . ' ' . $newmas[2]['speed'] . ' ' . $newmas[2]['doors'] . ' ' . $newmas[2]['year'];
-
-//echo "<pre>";
-//var_dump($newmas);
-//echo "</pre>";
-
-
-//
-//echo "CAR BMW<br>";
-//echo "$newmas[0]<br>";
-//echo "CAR TOYOTA<br>";
-//echo "CAR OPEL<br>";
-
-
-
+$newmas = ['BMW' => $bmw,'TOYOTA' => $toyota,'OPEL' => $opel];
+foreach($newmas as $key => $value) {
+    echo "CAR ".$key."<br>";
+    echo ($newmas[$key]['model']). " ";
+    echo ($newmas[$key]['speed']). " ";
+    echo ($newmas[$key]['doors']). " ";
+    echo ($newmas[$key]['year']). "<br><br>";
+}
