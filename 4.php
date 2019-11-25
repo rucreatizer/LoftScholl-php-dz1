@@ -4,7 +4,6 @@ $day = 7;
 function isJobDay($day) {
     switch ($day) {
         case 1:
-        case 1:
         case 2:
         case 3:
         case 4:
@@ -19,6 +18,6 @@ function isJobDay($day) {
             echo "Неизвестный день";
 
     }
-}
+};
 
 isJobDay($day);
